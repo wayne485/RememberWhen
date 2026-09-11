@@ -4,19 +4,13 @@
 <meta charset="UTF-8">
 <title>Remember When</title>
 <!-- GitHub Pages serves this file for any path it can't find, e.g. /rob-jenny.
-     This redirects to index.html while preserving the original path, so the app's
-     own router (in index.html's <head>) can restore it and read the slug normally.
-     Pattern: https://github.com/rafgraph/spa-github-pages -->
+     index.html (the marketing homepage) already handles the real root "/", so anything
+     that lands here is a slug and belongs in app.html, not the homepage.
+     This redirects to app.html?event=<slug>; app.html then looks the slug up in Supabase
+     and rewrites the address bar back to the clean /<slug> once it has loaded. -->
 <script>
-  var pathSegmentsToKeep = 0;
-  var l = window.location;
-  l.replace(
-    l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-    l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-    l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-    (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-    l.hash
-  );
+  var slug = window.location.pathname.replace(/^\/|\/$/g, '');
+  window.location.replace('/app.html?event=' + encodeURIComponent(slug));
 </script>
 </head>
 <body></body>
