@@ -325,6 +325,30 @@
       .wrap{width:min(100% - 26px,1120px)}
     }
   </style>
+
+<style>
+/* Remember When event mockups: always one per row */
+.events.event-gallery,
+.event-gallery {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  width: 100% !important;
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  gap: 30px !important;
+}
+.event-gallery .event-card {
+  width: 100% !important;
+  max-width: none !important;
+}
+.event-gallery .event-card img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+}
+</style>
+
 </head>
 <body>
 
@@ -365,6 +389,11 @@
           <article class="event-card image-card">
             <img src="21st-frame.jpg" alt="21st birthday digital event frame mockup" loading="lazy">
             <h3>21st Birthdays</h3>
+          </article>
+
+          <article class="event-card image-card">
+            <img src="birthday-frame.jpg" alt="Emma's 8th birthday digital event frame mockup" loading="lazy">
+            <h3>Birthdays</h3>
           </article>
         </div>
       </div>
