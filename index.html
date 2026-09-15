@@ -410,6 +410,21 @@ body, p, .hero-copy, .section-heading p, .steps p, .step p, .contact p, footer {
 }
 </style>
 
+
+<style>
+/* v13: enlarge Snap / Share / Print supporting lines */
+.hero-snap-share p {
+  font-size: clamp(22px, 4.8vw, 30px) !important;
+  line-height: 1.45 !important;
+  white-space: nowrap;
+}
+@media (max-width: 420px) {
+  .hero-snap-share p {
+    font-size: 20px !important;
+  }
+}
+</style>
+
 </head>
 <body>
 
@@ -424,13 +439,11 @@ body, p, .hero-copy, .section-heading p, .steps p, .step p, .contact p, footer {
       <div class="wrap">
         <h1 class="gold">A photo booth on every guest's phone</h1>
         <img src="rememberwhen-hero.jpg" alt="Wedding guests using a custom Remember When digital event frame on a phone" class="hero-main-image">
-        <p class="hero-copy hero-copy-strong">
-          Bespoke Digital Event Frames<br>for your special day.
-        </p>
+        <p class="hero-copy hero-copy-second">Guests can create a framed photo in seconds straight from their phone.</p>
 
         <div class="section-heading hero-snap-share">
           <h2 class="gold">Snap. Share. Print.</h2>
-          <p><span class="gold-action">Snap</span> a photo live<br><span class="gold-action">Share</span> on social media<br><span class="gold-action">Print</span> for the photo album</p>
+          <p><span class="gold-action">Snap</span> a photo<br><span class="gold-action">Share</span> on social media<br><span class="gold-action">Print</span> for the photo album</p>
         </div>
       </div>
     </section>
@@ -438,10 +451,9 @@ body, p, .hero-copy, .section-heading p, .steps p, .step p, .contact p, footer {
     <section>
       <div class="wrap">
         <div class="section-heading">
-          <h2 class="your-event-heading">Your event<br><span class="gold">Your frame</span></h2>
-          <p>
-            Every event gets its own custom digital frame, designed around the name, date, colors and style of the occasion.
-          </p>
+          <h2 class="gold your-event-heading">Bespoke Event Frames</h2>
+          <p>For your special day.</p>
+          <p>A digital frame designed with your occasion in mind, using the colors and style you choose.</p>
         </div>
 
         <div class="events event-gallery">
