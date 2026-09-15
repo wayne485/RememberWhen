@@ -324,6 +324,9 @@
       .hero-copy{font-size:18px}
       .wrap{width:min(100% - 26px,1120px)}
     }
+  
+    .hero-main-image{display:block;width:100%;max-width:1120px;height:auto;margin:34px auto 0;border-radius:18px}
+    @media (max-width:520px){.hero-main-image{margin-top:26px;border-radius:12px}}
   </style>
 
 <style>
@@ -349,6 +352,36 @@
 }
 </style>
 
+
+<style>
+/* v6 targeted hero spacing + heading sizing */
+.hero img.logo,
+.hero .logo {
+  margin-bottom: 12px !important;
+}
+.hero {
+  padding-top: 24px !important;
+}
+.hero h1 {
+  margin-top: 0 !important;
+}
+.event-intro h2,
+.your-event-heading,
+.event-section h2 {
+  font-size: clamp(34px, 7vw, 64px) !important;
+  line-height: 1.02 !important;
+}
+</style>
+
+
+<style>
+.hero h1,
+.your-event-heading {
+  font-size: clamp(34px, 7vw, 64px) !important;
+  line-height: 1.02 !important;
+}
+</style>
+
 </head>
 <body>
 
@@ -363,18 +396,19 @@
       <div class="wrap">
         <h1 class="gold">A photo booth on every guest's phone</h1>
         <p class="hero-copy hero-copy-strong">
-          Bespoke digital event frames for your special day
+          Bespoke Digital Event Frames<br>For your special day
         </p>
         <p class="hero-copy hero-copy-second">
           Guests simply open your event link, take a photo live or upload a photo to create a personalised keepsake in seconds
         </p>
+        <img src="rememberwhen-hero.jpg" alt="Wedding guests using a custom Remember When digital event frame on a phone" class="hero-main-image">
       </div>
     </section>
 
     <section>
       <div class="wrap">
         <div class="section-heading">
-          <h2>Your event<br><span class="gold">Your frame</span></h2>
+          <h2 class="your-event-heading">Your event<br><span class="gold">Your frame</span></h2>
           <p>
             Every event gets its own custom digital frame, designed around the name, date, colors and style of the occasion.
           </p>
