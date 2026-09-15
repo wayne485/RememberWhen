@@ -360,7 +360,7 @@
   margin-bottom: 12px !important;
 }
 .hero {
-  padding-top: 24px !important;
+  padding-top: 12px !important;
 }
 .hero h1 {
   margin-top: 0 !important;
@@ -382,6 +382,34 @@
 }
 </style>
 
+
+<style>
+/* v9 hero content order */
+.hero-main-image {
+  margin: 0 auto 28px !important;
+}
+.hero-snap-share {
+  margin: 30px auto 0 !important;
+}
+.hero-snap-share h2 {
+  margin-bottom: 14px;
+}
+</style>
+
+
+<style>
+/* v10: supporting text pure white */
+body, p, .hero-copy, .section-heading p, .steps p, .step p, .contact p, footer {
+  color: #ffffff !important;
+}
+.gold, .gold-action {
+  color: #ffd45a !important;
+}
+.gold-action {
+  font-weight: 700;
+}
+</style>
+
 </head>
 <body>
 
@@ -395,13 +423,15 @@
     <section class="hero">
       <div class="wrap">
         <h1 class="gold">A photo booth on every guest's phone</h1>
-        <p class="hero-copy hero-copy-strong">
-          Bespoke Digital Event Frames<br>For your special day
-        </p>
-        <p class="hero-copy hero-copy-second">
-          Guests simply open your event link, take a photo live or upload a photo to create a personalised keepsake in seconds
-        </p>
         <img src="rememberwhen-hero.jpg" alt="Wedding guests using a custom Remember When digital event frame on a phone" class="hero-main-image">
+        <p class="hero-copy hero-copy-strong">
+          Bespoke Digital Event Frames<br>for your special day.
+        </p>
+
+        <div class="section-heading hero-snap-share">
+          <h2 class="gold">Snap. Share. Print.</h2>
+          <p><span class="gold-action">Snap</span> a photo live<br><span class="gold-action">Share</span> on social media<br><span class="gold-action">Print</span> for the photo album</p>
+        </div>
       </div>
     </section>
 
@@ -435,11 +465,6 @@
 
     <section>
       <div class="wrap">
-        <div class="section-heading">
-          <h2 class="gold">Snap. Share. Print.</h2>
-          <p>No booth to queue for<br>No special equipment<br>No app download required</p>
-        </div>
-
         <div class="steps">
           <div class="step">
             <div class="step-num">Step 1</div>
